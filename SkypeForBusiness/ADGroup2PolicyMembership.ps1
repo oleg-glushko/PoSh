@@ -143,7 +143,7 @@ $tempusers = @()
 $groups | ForEach-Object
 {
     $tempgroup = $_[1]
-    get-adgroupmember -identity ($_[1]) | %ForEach-Object
+    get-adgroupmember -identity ($_[1]) | ForEach-Object
     {
         if ($_.distinguishedName -notin $tempusers)
         {

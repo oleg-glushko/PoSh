@@ -55,7 +55,7 @@ for ($j = 0; $j -lt $Dirs2Clean.Count; $j++)
 {
     $Files += , (Get-ChildItem -Path $Dirs2Clean[$j] -Filter $LogFilter | `
         Sort-Object Name)
-    $Files[$j] | % {$UsedSize += $_.length}
+    $Files[$j] | ForEach-Object {$UsedSize += $_.length}
     # For every processes folder make a hashtable, store them all in the
     # $CurrSet hashtable
     $Set = @{"Increment" = 0; "DateTime" = [datetime]0; "CacheHdr" = $false;
