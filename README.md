@@ -1,4 +1,5 @@
 # Useful (or not) PowerShell scripts
+See also my PoSh implementations of Grokking Algorithms [examples](https://github.com/egonSchiele/grokking_algorithms) (lessons 1-9).
 
 ## SkypeForBusiness
 Tools for administering Skype for Business service
